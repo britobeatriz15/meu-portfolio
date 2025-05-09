@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio UI/UX</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #222222;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #9b4e06b9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+    /* Estilo geral para todos os links fora do nav */
+    a {
+        color: #9c690a;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: #e7b40c;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 100px 20px 60px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    section .img-topo-site img {
+        position: relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flutuar {
+        0% {
+            top: 0;
+        }
+
+        100% {
+            top: 30px;
+        }
+    }
+
+    .intro {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .projects {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project {
+        background: #535353a8;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .project img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .project h3 {
+        margin: 10px 0 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #666;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="intro">
+        <h1>Oi, eu sou Beatriz Brito</h1>
+        <p>Designer UI/UX em transição, focada em criar experiências digitais intuitivas e bonitas.</p>
+        <div class="img-topo-site">
+            <img src="img/foto-perfil-beatriz.png" alt="Imagem de uma pessoa">
+        </div><!--img-topo-site-->
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Com 5 anos de experiência em suporte técnico, eu descobri uma paixão por entender as necessidades dos
+            usuários e criar soluções que melhorem suas vidas. Decidi migrar para o mundo do design UX, onde posso
+            combinar minha experiência técnica com minha criatividade para criar produtos e serviços que sejam ao mesmo
+            tempo funcionais e agradáveis de usar.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="img/Frame - Visão inicial celular.png" alt="Projeto 1" />
+                <h3>APP Floricultura</h3>
+                <a href="https://www.figma.com/design/ped7JxnMuhKIqimsExxd1W/Floricultura?node-id=31-2&m=dev&t=aO5BVBMTJAiMjiLY-1"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver protótipo no Figma
+                </a>
+                <p>Um app para vendas de plantas e ajudar a organizar pedidos.</p>
+                <a href="projeto1.html">Ver estudo de caso</a>
+            </div>
+            <div class="project">
+                <img src="img/reservado para futuro projeto.png" alt="Projeto 2" />
+                <h3>Projeto futuro</h3>
+                <p>Reservado para um novo design futuramente.</p>
+                <a href="#">Ver estudo de caso</a>
+            </div>
+            <!-- Adicione mais projetos -->
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Me envie um e-mail: <a href="mailto:britobeatriz15@gmail.com">britobeatriz15@gmail.com</a></p>
+        <p>Ou me encontre no <a href="https://www.linkedin.com/in/beatrizrbrito/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© Beatriz Brito. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
